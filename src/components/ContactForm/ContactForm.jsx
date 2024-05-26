@@ -3,10 +3,10 @@ import { useId } from "react";
 import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 
-import { addContact } from '../../redux/contactsSlice';
+import { addContact } from '../../redux/contactsOps';
 import css from './ContactForm.module.css';
 
-export default function ContactForm({ onAddContact }) {
+export default function ContactForm() {
   
   const REQUIRED_ERROR_MESSAGE = 'Required';
   const MIN_LENGHT_ERROR_MESSAGE = 'Too Short!';

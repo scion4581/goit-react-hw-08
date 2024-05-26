@@ -1,0 +1,6 @@
+.contactList {
+    margin-top: 17px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,32 @@
+.contactForm {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+
+.fieldGroup {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.formFieldInput {
+    margin-top: 5px;
+}
+
+.formSubmitButton {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+}

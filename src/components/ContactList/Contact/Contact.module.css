@@ -1,0 +1,18 @@
+.contactListItem {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.contactNameSection, .contactNumberSection {
+    display: flex;
+    gap: 10px;
+}
+
+.contactNumberSection {
+    margin-top: 10px;
+}

@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 import Contact from './Contact/Contact';
-import { selectFilteredContacts } from '../../redux/contactsSelectors';
+import { selectFilteredContacts } from '../../redux/contacts/selectors';
 
 import css from './ContactList.module.css';
 
@@ -15,5 +15,6 @@ export default function ContactList() {
                 return <Contact key={contact.id} contact={contact} />
             })}
         </ul>
+
     );
 }

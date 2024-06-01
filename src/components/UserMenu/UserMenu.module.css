@@ -1,0 +1,9 @@
+.userNavigation {
+    display: flex;
+    align-items: center;
+}
+
+.logoutButton {
+    display: inline-block;
+    margin-left: 16px;
+}

@@ -18,6 +18,7 @@ const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
 const ContactsPage = lazy(() => import('../../pages/ContactsPage/ContactsPage'));
 const LoginPage = lazy(() => import('../../pages/LoginPage/LoginPage'));
 const RegisterPage = lazy(() => import('../../pages/RegisterPage/RegisterPage'));
+const ErrorPage = lazy(() => import('../../pages/ErrorPage/ErrorPage'));
 
 export default function App() {
 
@@ -39,6 +40,7 @@ export default function App() {
           <Route path='/login' element={<RestrictedRoute component={<LoginPage />} redirectTo='/contacts' />} />
           <Route path='/register' element={<RestrictedRoute component={<RegisterPage />} redirectTo='/' />} />
           <Route path='/contacts' element={<PrivateRoute component={<ContactsPage />} redirectTo='/login' />} />
+          <Route path='*' element={<ErrorPage message='Page not found' />} />
         </Routes>
       </Suspense>
       {isLoading && <Loader />}
